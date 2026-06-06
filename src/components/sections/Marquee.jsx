@@ -14,10 +14,10 @@ export default function Marquee() {
               key={`${group}-${index}`}
               className="flex items-center mx-4 md:mx-8"
             >
-              <span className="text-3xl md:text-5xl font-black text-brand-gray/30 uppercase tracking-wider">
+              <span className="text-xl sm:text-3xl md:text-5xl font-black text-brand-gray/30 uppercase tracking-wider">
                 {skill}
               </span>
-              <div className="w-3 h-3 md:w-4 md:h-4 bg-brand-orange rounded-full ml-8 md:ml-16" />
+              <div className="w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 bg-brand-orange rounded-full ml-6 md:ml-16" />
             </div>
           ))}
         </div>
