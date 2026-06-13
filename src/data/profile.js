@@ -1,9 +1,12 @@
 export const profile = {
   name: "AshversE",
-  tagline: "Social Media Content Editor",
-  heroHeadline: "Creating content that captures attention and drives ",
+  tagline: "Short-form Video Editor",
+  heroHeadline: "Retention-Focused Reel Editing for Agencies, Brands & Creators",
   aboutBio:
-    "I create content that connects, engages, and performs. By blending video editing, visual storytelling, design, and AI-powered workflows, I transform ideas into impactful digital experiences.",
+    "Hi, I'm Ashok.
+I'm a Short-Form Video Editor passionate about creating content that stands out in today's fast-moving social media landscape.
+I specialize in retention-focused reel editing for Instagram Reels and YouTube Shorts, combining storytelling, pacing, captions, motion graphics, and sound design to create engaging viewer experiences.
+My goal is not just to edit videos, but to help clients produce content that holds attention and performs effectively on short-form platforms.",
   stats: [
     { label: "Years Experience", value: 1 },
     { label: "Videos Delivered", value: 60 },
@@ -17,9 +20,11 @@ export const profile = {
     "Canva",
   ],
   skills: [
-    "Sound Design",
-    "Video Editing",
+    "Instagram Reels Editing",
+    "YouTube Shorts Editing",
     "Color Correction",
-    "Graphic Design",
+    "Talking Head Videos",
+    "Motion Graphics",
+    "Content Repurposing",
   ],
 };
