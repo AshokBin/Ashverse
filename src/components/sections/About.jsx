@@ -24,7 +24,7 @@ export default function About() {
   viewport={{ once: true }}
   transition={{ duration: 0.6 }}
 >
-  <h3 className="text-lg md:text-xl text-brand-gray mb-4">
+  <h3 className="text-2xl md:text-4xl text-brand-gray mb-4">
     Hi, I'm{" "}
     <span className="text-white font-bold">
       Ashok Palani
@@ -32,7 +32,7 @@ export default function About() {
   </h3>
 
   <motion.p
-    className="text-2xl md:text-4xl leading-relaxed text-brand-gray font-medium"
+    className="text-lg md:text-xl leading-relaxed text-brand-gray font-medium"
   >
     I am a{" "}
     <strong className="text-white font-black">
