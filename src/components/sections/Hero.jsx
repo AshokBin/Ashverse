@@ -46,7 +46,7 @@ export default function Hero() {
                 i === 0 ? (
                   <span key={i}>
                     {part}
-                    <span className="text-brand-orange">results</span>
+                    <span className="text-brand-orange">Agencies, Brands & Creators</span>
                   </span>
                 ) : (
                   <span key={i}>{part}</span>
