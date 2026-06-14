@@ -32,7 +32,7 @@ export default function About() {
   </h3>
 
   <motion.p
-    className="text-lg text-left md:text-xl leading-relaxed text-brand-gray font-medium"
+    className="text-lg text-center md:text-xl leading-relaxed text-brand-gray font-medium"
   >
     I am a{" "}
     <strong className="text-white font-black">
