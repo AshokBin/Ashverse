@@ -27,7 +27,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="text-2xl font-black tracking-[0.2em] text-white">
-          ASHVERS<span className="text-brand-orange uppercase">E</span>
+          ASH<span className="text-brand-orange uppercase">VE</span>RSE
         </a>
 
         <button
