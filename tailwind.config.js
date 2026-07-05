@@ -8,7 +8,7 @@ export default {
           black: "#0a0a0a",
           dark: "#111111",
           card: "#1a1a1a",
-          orange: "#ffc40c",
+          orange: "#00C0F0",
           red: "#FF2D2D",
           white: "#FFFFFF",
           gray: "#888888",
