@@ -4,7 +4,7 @@ import SectionTitle from "../ui/SectionTitle";
 import VideoCarousel from "../ui/VideoCarousel";
 
 export default function ShortForm() {
-  const [activeTab, setActiveTab] = useState("client");
+  const [activeTab, setActiveTab] = useState("internship");
 
   return (
     <section className="py-24 overflow-hidden bg-brand-black" id="short-form">
