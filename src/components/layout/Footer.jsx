@@ -5,7 +5,7 @@ export default function Footer() {
         <p className="font-bold tracking-widest text-white mb-4 md:mb-0">
           ASH<span className="text-brand-orange uppercase">VE</span>RSE
         </p>
-        <p>Made to Be Remembered.</p>
+        <p>Made to Be Remembered!</p>
       </div>
     </footer>
   );

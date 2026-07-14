@@ -1,20 +1,31 @@
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 import { profile } from "../../data/profile";
-import { socialLinks } from "../../data/social";
-import SocialLink from "../ui/SocialLink";
+// import { socialLinks } from "../../data/social";
+// import SocialLink from "../ui/SocialLink";
 
 export default function Hero() {
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
-      transition: { staggerChildren: 0.2, delayChildren: 0.3 },
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      },
     },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
@@ -29,6 +40,7 @@ export default function Hero() {
           animate="show"
           className="flex flex-col items-center text-center"
         >
+          {/* Tagline */}
           <motion.h1
             variants={itemVariants}
             className="text-sm md:text-base font-bold tracking-[0.3em] text-brand-gray uppercase mb-8"
@@ -36,17 +48,21 @@ export default function Hero() {
             {profile.tagline}
           </motion.h1>
 
+          {/* Hero Card */}
           <motion.div
             variants={itemVariants}
-            className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 md:p-16 rounded-[2.5rem] shadow-2xl mb-12 relative overflow-hidden group"
+            className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 md:p-16 rounded-[2.5rem] shadow-2xl mb-10 relative overflow-hidden group"
           >
             <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight text-white">
-              {profile.heroHeadline.split("one-stop").map((part, i, arr) =>
+              {profile.heroHeadline.split("one-stop").map((part, i) =>
                 i === 0 ? (
                   <span key={i}>
                     {part}
-                    <span className="text-brand-orange">Agencies, Brands & Creators</span>
+                    <span className="text-brand-orange">
+                      Agencies, Brands & Creators
+                    </span>
                   </span>
                 ) : (
                   <span key={i}>{part}</span>
@@ -55,14 +71,44 @@ export default function Hero() {
             </h2>
           </motion.div>
 
-          {/* <motion.div
+          {/* Resume Button */}
+          <motion.a
             variants={itemVariants}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full md:w-auto"
+            href="/Ashok_Video Editor_Resume.pdf"
+            download
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.96 }}
+            className="group inline-flex items-center justify-center gap-3
+                       min-w-[220px]
+                       px-10 py-4
+                       rounded-full
+                       bg-white/5 backdrop-blur-xl
+                       border border-white/10
+                       text-lg font-semibold text-white
+                       shadow-lg
+                       hover:border-brand-orange
+                       hover:text-brand-orange
+                       hover:bg-white/10
+                       transition-all duration-300"
+          >
+            <Download
+              size={20}
+              className="transition-transform duration-300 group-hover:translate-y-0.5"
+            />
+            Resume
+          </motion.a>
+
+          {/* Social Links */}
+          {/*
+          <motion.div
+            variants={itemVariants}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full md:w-auto mt-10"
           >
             {socialLinks.map((link) => (
               <SocialLink key={link.platform} {...link} />
             ))}
-          </motion.div> */}
+          </motion.div>
+          */}
         </motion.div>
       </div>
     </section>

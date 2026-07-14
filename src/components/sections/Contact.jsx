@@ -1,3 +1,4 @@
+import { Download } from "lucide-react";
 import { contactInfo } from "../../data/contact";
 import { socialLinks } from "../../data/social";
 
@@ -11,6 +12,7 @@ export default function Contact() {
           Let's Create videos that get{" "}
           <span className="text-brand-orange">Results</span>
         </h2>
+
         <p className="text-xl text-brand-gray mb-12 relative z-10">
           Ready to Elevate Your Content?
         </p>
@@ -22,6 +24,7 @@ export default function Contact() {
           >
             Send an Email
           </a>
+
           <a
             href={contactInfo.calendlyLink}
             target="_blank"
@@ -35,6 +38,7 @@ export default function Contact() {
         <div className="mt-20 pt-10 border-t border-white/10 flex justify-center gap-6 relative z-10">
           {socialLinks.map((link) => {
             const Icon = link.icon;
+
             return (
               <a
                 key={link.platform}
@@ -48,8 +52,32 @@ export default function Contact() {
             );
           })}
         </div>
-        <div className="font-medium pt-8 flex justify-center relative z-10">
-          ASHOK PALANI
+
+        {/* Resume Button */}
+        <div className="mt-8 flex justify-center relative z-10">
+          <a
+            href="/Ashok_Video Editor_Resume.pdf"
+            download
+            className="group inline-flex items-center justify-center gap-3
+                       min-w-[220px]
+                       px-10 py-4
+                       rounded-full
+                       bg-white/5 backdrop-blur-xl
+                       border border-white/10
+                       text-lg font-semibold text-white
+                       shadow-lg
+                       hover:border-brand-orange
+                       hover:bg-white/10
+                       hover:text-brand-orange
+                       hover:scale-105
+                       transition-all duration-300"
+          >
+            <Download
+              size={20}
+              className="transition-transform duration-300 group-hover:translate-y-0.5"
+            />
+            Resume
+          </a>
         </div>
       </div>
     </section>
